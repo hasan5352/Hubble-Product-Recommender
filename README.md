@@ -23,4 +23,4 @@
 2. Fetch the images of the recommended products
 3. Deploy model on a website
 4. Leverage Deep Learning and Neural Networks for recommendation model
-5.  
+5. Leverage Clustering algorithms to divide the dataset into clusters so that when a seller lists a product, it directly gets assigned to a cluster and gets recommneded to users searching for similar products
