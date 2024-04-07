@@ -7,7 +7,12 @@
 
 ### The Process
 1. Transform the datasets into pandas dataframes and clean the data.
-1. Employ Univariate Imputation using mean on a subcategory basis to account for potential variations in feature means across different subcategories Generated a similarity matrix with distances of each movie to every other movie. Each array in vector represents a movie.
+2. Employ Univariate Imputation using mean on a subcategory basis to account for potential variations in feature means across different subcategories
+3. * hel
+4.
+
+1. 
+1.  Generated a similarity matrix with distances of each movie to every other movie. Each array in vector represents a movie.
   - The distance metric used to calculate distance between the movies is cosine similarity
 1. Apply CCA for values missing completely at random (MCAR)
 1. Normalize numerical data due to skewness and presence of outliers
