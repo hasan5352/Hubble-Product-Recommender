@@ -8,14 +8,19 @@
 
 ### The Process:
   1. Transform the datasets into pandas dataframes and clean the data.
-  2. Employ Univariate Imputation using mean on a subcategory basis to account for potential variations in feature means across different subcategories
+  2. Employ Univariate Imputation using mean on a subcategory basis to account for potential variations in feature means across different sub categories
   3. Apply CCA for values missing completely at random (MCAR)
   4. Normalize numerical data due to skewness and presence of outliers
   5.  Expand the Main Category and the Subcategory features to 20 features and 109 features respectively using One-Hot Encoding due to the ordinal nature of the values in these features.
-  6. Use TF-IDF vectorization of instances into 5000-dimensions
-  7. Generate a similarity matrix with cosine of the angle of each product to every other product.
+  6. Sample 20k instances from the dataset using stratified sampling for each Sub Category due to memory constraints.
+  7. Use TF-IDF vectorization of instances into 5000-dimensions due to memory constraints
+  8. Generate a similarity matrix with cosine of the angle of each product to every other product.
   - The distance metric used to calculate distance between the movies is cosine similarity
   8. Implement a recommendation algorithm to suggest the most similar products based on a given product name
 
 ### Further To Dos:
 1. Update Univariate Imputation to Multivariate Imputation
+2. Fetch the images of the recommended products
+3. Deploy model on a website
+4. Leverage Deep Learning and Neural Networks for recommendation model
+5.  
