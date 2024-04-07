@@ -5,23 +5,17 @@
 - The data used is a product sales dataset retrieved from - **[Kaggle](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)**   
 - After downloading and extracting the dataset, delete the Amazon-products.csv in it and paste the dataset in the same folder as the model file. 
 
-### The Process
+
 ### The Process:
-  1. Collected datasets from a specified directory and transformed them into pandas DataFrames.
-  2. Combined dataframes and important features, cleaned the data and stemmed the combined important features.
-  3. Used the Bag of Words technique for vectorization of instances (movies) into 5000-dimensions
-  4. Generated a similarity matrix with distances of each movie to every other movie. Each array in vector represents a movie.
+  1. Transform the datasets into pandas dataframes and clean the data.
+  2. Employ Univariate Imputation using mean on a subcategory basis to account for potential variations in feature means across different subcategories
+  3. Apply CCA for values missing completely at random (MCAR)
+  4. Normalize numerical data due to skewness and presence of outliers
+  5.  Expand the Main Category and the Subcategory features to 20 features and 109 features respectively using One-Hot Encoding due to the ordinal nature of the values in these features.
+  6. Use TF-IDF vectorization of instances into 5000-dimensions
+  7. Generate a similarity matrix with cosine of the angle of each product to every other product.
   - The distance metric used to calculate distance between the movies is cosine similarity
-  5. Implemented a recommendation algorithm to suggest the most similar movies based on a given movie name
+  8. Implement a recommendation algorithm to suggest the most similar products based on a given product name
 
-    
-1. Transform the datasets into pandas dataframes and clean the data.
-1. Employ Univariate Imputation using mean on a subcategory basis to account for potential variations in feature means across different subcategories
-  * I will update this to Multivariate Imputation
-1. Apply CCA for values missing completely at random (MCAR)
-1. Normalize numerical data due to skewness and presence of outliers
-1.  
-
-
-1.  Generated a similarity matrix with distances of each movie to every other movie. Each array in vector represents a movie.
-  - The distance metric used to calculate distance between the movies is cosine similarity
+### Further To Dos:
+1. Update Univariate Imputation to Multivariate Imputation
