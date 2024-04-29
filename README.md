@@ -24,3 +24,4 @@
 3. Deploy model on a website
 4. Leverage Deep Learning and Neural Networks for recommendation model
 5. Leverage Multi-label Classification to divide the dataset into groups (subcategory wise) so that when a seller lists a product, it directly gets assigned to a group and gets recommneded to users searching for similar products
+6. Apply Reinforcement learning for learning
