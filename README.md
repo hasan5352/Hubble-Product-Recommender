@@ -1,8 +1,12 @@
 # Hubble-ProductRecommender
 - This project is built on scikit-learn, pandas and nltk libraries of python
+### Setup
+-  Download the data from - **[Kaggle](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)**
+    - paste
 ### The Data:
+- The data used is a product sales dataset
 - The model operates on both numerical, and categorical data. The data contains 9 features, over 500k instances/products with more than 30% having missing values in atleast one feature. The instances are divided into 109 sub categories and 20 main categories of products. 
-- The data used is a product sales dataset retrieved from - **[Kaggle](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)**   
+   
 - After downloading and extracting the dataset, delete the Amazon-products.csv in it and paste the dataset in the same folder as the model file. 
 
 
