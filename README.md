@@ -3,7 +3,7 @@
 ### Setup
 -  Download data from **[Kaggle](https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset)**. paste it in the same directory as model file and rename as "data".
     - This is for **get_dfs_from_csvs function** to get the data as dataframes.
-- Confirm that gitignore file is cloned with the first entry as "data".
+- Confirm that gitignore file is cloned with its first entry as "data".
 ### The Data:
 - The data used is a product sales dataset
 - The model operates on both numerical, and categorical data. The data contains 9 features, over 500k instances/products with more than 30% having missing values in atleast one feature. The instances are divided into 109 sub categories and 20 main categories of products. 
